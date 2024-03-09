@@ -1,0 +1,14 @@
+.imageCoroselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #120809;
+}
+
+.carousel {
+  width: 70%;
+
+  margin: 20px;
+  background-color: #000;
+}

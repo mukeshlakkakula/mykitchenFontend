@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 30%;
+  font-family: "Roboto";
+  padding: 10px;
+
+  color: #000;
+}
+
+.fullCardsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers {
+  font-weight: bold;
+  color: red;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  margin: 30px;
+}

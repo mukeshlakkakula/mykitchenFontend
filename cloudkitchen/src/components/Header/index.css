@@ -1,0 +1,25 @@
+.headerContainer {
+  display: flex;
+
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 1px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #241b1c;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 20%;
+}
+
+.btnOfHeader {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 4px;
+}
