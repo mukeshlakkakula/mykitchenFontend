@@ -1,16 +1,16 @@
 const express = require("express");
 
 const app = express();
+const cors = require("cors");
 const mongoDB = require("./db");
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://cloud-kitchenfullone-frontend.vercel.app");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin,X-Requested-With,Content-Type,Accept"
-  );
-  next();
-});
+app.use(
+  cors({
+    origin: "https://cloud-kitchenfullone-frontend.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 app.get("/", function (req, res) {
   res.send("Hello World!");
